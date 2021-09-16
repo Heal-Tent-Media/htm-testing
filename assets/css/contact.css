@@ -1,0 +1,241 @@
+.cu {
+    background-color: #262626
+}
+
+.cud {
+    display: flex;
+    padding: 50px 0
+}
+
+.cucd {
+    display: block;
+    margin-left: 50px;
+    width: calc(100% - 550px);
+    height: auto;
+    color: var(--font-color-white);
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 2px
+}
+
+.cuctg {
+    color: var(--primary-color)
+}
+
+.cuft {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--font-color-white);
+    letter-spacing: 2px
+}
+
+.cufd {
+    display: block;
+    padding: 30px 0;
+    width: 500px;
+    height: auto;
+    max-height: 800px;
+    margin-right: 50px;
+    box-shadow: 2px 2px 8px 0 #4d4d4d, -8px -8px 12px 0 #000;
+    background: linear-gradient(135deg, #4d4d4d, #000);
+    border-radius: 15px
+}
+
+.cufw {
+    display: flex;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto 30px;
+    background: 0 0;
+    border-radius: 5px;
+    box-shadow: inset 8px 8px 4px #000, inset -8px -8px 4px #4d4d4d;
+    align-items: center
+}
+
+.cufw label {
+    width: calc(100% - 224px);
+    height: 24px;
+    color: #fffFFF80;
+    margin: 0 10px 0 0
+}
+
+.cufw select {
+    margin-right: 10px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background: 0 0;
+    cursor: pointer
+}
+
+.cufw option {
+    background: #3cba54;
+}
+
+.cufw select:hover {
+    background: #0880EC20
+}
+
+.cufw svg {
+    height: 24px;
+    width: 24px !important;
+    margin: 0 10px 0 25px;
+    fill: #e6e6e6 !important
+}
+
+.cufw input {
+    width: calc(100% - 24px);
+    border: none;
+    outline: 0;
+    background: 0 0;
+    font-size: 18px;
+    color: var(--font-color-white)
+}
+
+.cuf small {
+    display: block;
+    width: 100%;
+    margin: 15px 0 25px;
+    text-align: center;
+    visibility: hidden
+}
+
+.f-error {
+    color: #db3236;
+    visibility: visible !important
+}
+
+.f-success {
+    color: #3cba54;
+    visibility: visible !important
+}
+
+.cua {
+    display: flex;
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    color: var(--font-color-white) !important;
+    font-size: 1rem !important;
+    font-weight: 900;
+    border-radius: 50%;
+    text-decoration: none;
+    letter-spacing: 4px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 8px 0 #4d4d4e, -3px -3px 8px 0 #000;
+    z-index: 5;
+    cursor: pointer
+}
+
+.cua::after {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border: 6px solid rgba(255, 255, 255, .2);
+    border-radius: 100%;
+    -webkit-animation: ripple 3s 0s infinite;
+    animation: ripple 3s 0s infinite
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale3d(1, 1, 1)
+    }
+    to {
+        opacity: 0;
+        transform: scale3d(1.2, 1.2, 1)
+    }
+}
+
+.cua-ig {
+    display: block;
+    font-size: 3.5rem;
+    opacity: .4;
+    position: absolute;
+    z-index: -1
+}
+
+.loader {
+    display: none;
+    position: relative;
+    top: -160px;
+    margin: auto;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-top: 6px solid var(--primary-color);
+    border-left: 6px solid var(--primary-color);
+    border-bottom: 6px solid var(--seconday-color);
+    border-right: 6px solid var(--seconday-color);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .cucd {
+        font-size: 4.5rem
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .cud {
+        display: block;
+        margin: auto
+    }
+
+    .cucd {
+        margin: auto;
+        width: 100%;
+        text-align: center
+    }
+
+    .cufd {
+        width: 80%;
+        margin: 20px auto
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .cucd {
+        font-size: 3rem
+    }
+
+    .cufd {
+        width: 90%;
+        margin: 20px auto
+    }
+
+    .cufw {
+        width: 95%
+    }
+
+    .cufw svg {
+        margin: 0 10px 0 15px
+    }
+
+    .cufw select {
+        margin-right: 10px;
+        width: 150px
+    }
+}

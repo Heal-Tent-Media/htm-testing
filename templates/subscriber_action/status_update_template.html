@@ -1,0 +1,77 @@
+{% load static %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Status | Heal Tent Media</title>
+    <meta name="description"
+          content="Status of your request">
+
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" href="{% static 'images/logo/favicon.png' %}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en-US">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/subscriber_action/status_update_style.css' %}" type="text/css">
+    {% endcompress %}
+</head>
+<body>
+<div class="container-wrapper">
+    <div class="container">
+        <table>
+            <tbody>
+            <tr class="mail-banner">
+                <td>
+                    <img src="https://htm-web-static-bucket.s3.amazonaws.com/mail-assets/htm-text-logo.png"
+                         alt="Heal Tent Media">
+                </td>
+            </tr>
+            <tr>
+                <td class="title">
+                    <h3>{{ title | safe }}</h3>
+                </td>
+            </tr>
+            <tr class="content">
+                <td>
+                    <p>Your request has been updated <b>{{ action }}</b> for <b>{{ subscriber_mail }}</b> from receiving
+                        future email
+                        messages.</p>
+                    {% if req_update == "held" %}
+                        <p>You have <b>RETAINED</b> your preference.</p>
+                    {% elif req_update == "changed" %}
+                        <p>You have <b>CHANGED</b> your preference.</p>
+                    {% elif req_update == "unsubscribed" %}
+                        <p>You have <b>UNSUBSCRIBED</b> from receiving further mail.</p>
+                    {% endif %}
+                    <p><i>Keep showing your love and support to us.</i></p>
+                </td>
+            </tr>
+            <tr class="tag-banner">
+                <td>
+                    <h4 class="tag-ti">WE <span class="tag-sp">EMPHASIZE</span> YOUR <span
+                            class="tag-sp">SUCCESS</span>
+                    </h4>
+                </td>
+            </tr>
+            <tr class="footer">
+                <td>
+                    <br>
+                    <div class="copyrights">
+                        © 2021 <a href="https://healtentmedia.com">Heal Tent Media</a> · All Rights Reserved
+                    </div>
+                    <br>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

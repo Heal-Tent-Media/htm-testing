@@ -1,0 +1,179 @@
+{% load static %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Heal Tent Media</title>
+    <meta name="description"
+          content="Complete business services for your brand. Heal Tent Media emphasizes your success. Reach out to us for any queries or request of our services.">
+    <meta name="keywords"
+          content="dropshipping, network marketing, starting a business, digital marketing agency, digital marketing company, logo design, brand identity, business logo, seo services, seositecheckup">
+
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" href="{% static 'images/logo/favicon.png' %}">
+
+    <meta property="og:title" content="Contact Us | Heal Tent Media"/>
+    <meta property="og:description"
+          content="Complete business services for your brand. Heal Tent Media emphasizes your success. Reach out to us for any queries or request of our services."/>
+    <meta property="og:url" content="https://www.healtentmedia.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="{% static 'images/logo/htm-og-img.jpg' %}"/>
+    <meta property="og:image:url" content="{% static 'images/logo/htm-og-img.jpg' %}"/>
+    <meta property="og:image:width" content="1200px"/>
+    <meta property="og:image:height" content="630px"/>
+
+    <meta name="twitter:description"
+          content="Complete business services for your brand. Heal Tent Media emphasizes your success. Reach out to us for any queries or request of our services.">
+    <meta name="twitter:title" content="Contact Us | Heal Tent Media">
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:image" content="{% static 'images/logo/htm-og-img.jpg' %}"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en-US">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow"/>
+
+    <meta name="city" content="Coimbatore">
+    <meta name="state" content="Tamil Nadu">
+    <meta name="geo.region" content="IN-TN">
+    <meta name="geo.placename" content="Coimbatore">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Company",
+            "name": "Heal Tent Media - Your Business Healer",
+            "image": [
+                "https://healtentmedia.com/assets/images/logo/favicon.png",
+                "https://healtentmedia.com/assets/images/logo/healtent-logo.png",
+                "https://healtentmedia.com/assets/images/logo/healtent-text-logo-large.png"
+            ],
+            "author": {
+                "@type": "Company",
+                "name": "Heal Tent Media"
+            },
+            "datePublished": "2021-07-01",
+            "description": "Complete business services for your brand. Heal Tent Media emphasizes your success. Reach out to us for any queries or request of our services.",
+        }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHD7H4N419"></script>
+    {% compress js %}
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-NHD7H4N419');
+    </script>
+    {% endcompress %}
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    {% endcompress %}
+</head>
+<body>
+{% include 'components/header.html' %}
+<section class="cu -S">
+    <div class="cud -D">
+        <div class="cucd">
+            WE<br><span class="cuctg">EMPHASIZE</span><br>YOUR<br><span class="cuctg">SUCCESS</span>
+        </div>
+        <div class="cufd">
+            <div class="cuf" id="cuf">
+                {% csrf_token %}
+                <p class="cuft">Fill Me</p>
+                <div class="cufw" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         enable-background="new 0 0 24 24" height="24px"
+                         viewBox="0 0 24 24" width="24px">
+                        <g>
+                            <rect fill="none" height="24" width="24" y="0"></rect>
+                        </g>
+                        <g>
+                            <g>
+                                <rect height="1.5" width="4" x="14" y="12"></rect>
+                                <rect height="1.5" width="4" x="14" y="15"></rect>
+                                <path d="M20,7h-5V4c0-1.1-0.9-2-2-2h-2C9.9,2,9,2.9,9,4v3H4C2.9,7,2,7.9,2,9v11c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V9 C22,7.9,21.1,7,20,7z M11,7V4h2v3v2h-2V7z M20,20H4V9h5c0,1.1,0.9,2,2,2h2c1.1,0,2-0.9,2-2h5V20z"></path>
+                                <circle cx="9" cy="13.5" r="1.5"></circle>
+                                <path d="M11.08,16.18C10.44,15.9,9.74,15.75,9,15.75s-1.44,0.15-2.08,0.43C6.36,16.42,6,16.96,6,17.57V18h6v-0.43 C12,16.96,11.64,16.42,11.08,16.18z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <input type="email" id="cl-name"
+                           placeholder="Name"/>
+                </div>
+                <div class="cufw">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                         viewBox="0 0 24 24" width="24px">
+                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                        <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path>
+                    </svg>
+                    <input type="email" id="cl-mail"
+                           placeholder="E-mail"/>
+                </div>
+                <div class="cufw">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                         viewBox="0 0 24 24" width="24px">
+                        <rect fill="none" height="24" width="24"></rect>
+                        <path d="M12,7V3H2v18h20V7H12z M10,19H4v-2h6V19z M10,15H4v-2h6V15z M10,11H4V9h6V11z M10,7H4V5h6V7z M20,19h-8V9h8V19z M18,11h-4v2 h4V11z M18,15h-4v2h4V15z"></path>
+                    </svg>
+                    <input type="text" id="cl-org-na"
+                           placeholder="Organization Name"/>
+                </div>
+                <div class="cufw">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                        <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z"></path>
+                    </svg>
+                    <input type="text" id="cl-org-web"
+                           placeholder="Organization Website"/>
+                </div>
+                <div class="cufw">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                        <path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                    </svg>
+                    <label for="purpose">Enquiry for </label>
+                    <select name="cars" id="cl-purpose">
+                        <option value="default">--&nbsp;&nbsp;default&nbsp;&nbsp;--</option>
+                        <option value="total-care">Grow my brand</option>
+                        <option value="finder">Market & Consumer Research</option>
+                        <option value="digital">Social Media Ads</option>
+                        <option value="creator">Blogs & Articles with SEO add on</option>
+                        <option value="design">Video, Logo & Poster Designs</option>
+                        <option value="design-web">Website Designs</option>
+                        <option value="audit">Website Audit</option>
+                    </select>
+                </div>
+                <div class="cufw">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                         viewBox="0 0 24 24" width="24px">
+                        <g>
+                            <rect fill="none" height="24" width="24"></rect>
+                            <path d="M14,2H6C4.9,2,4,2.9,4,4v16c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V8L14,2z M6,20V4h7v4h5v12H6z M11,19h2v-1h1 c0.55,0,1-0.45,1-1v-3c0-0.55-0.45-1-1-1h-3v-1h4v-2h-2V9h-2v1h-1c-0.55,0-1,0.45-1,1v3c0,0.55,0.45,1,1,1h3v1H9v2h2V19z"></path>
+                        </g>
+                    </svg>
+                    <input type="text" id="cl-quote"
+                           placeholder="Request Quote in $"/>
+                </div>
+                <small id="errorD">* Error Massage</small>
+                <p class="cua" id="f-submit">SUBMIT<br><span class="cua-ig" id="cua-ig">🚀</span></p>
+                <div class="loader" id="loader"></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'components/footer.html' %}
+{% compress js %}
+<script defer src="{% static 'js/contact.js' %}"></script>
+{% endcompress %}
+</body>
+</html>

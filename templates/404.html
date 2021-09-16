@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+{% load compress %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oops.. Technical Glitch at HealTentMedia</title>
+    <meta name="description"
+          content="Maybe the page you're looking for is not found or never existed.">
+
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" href="{% static 'images/logo/favicon.png' %}">
+    <meta property="og:title" content="Oops.. Technical Glitch at HealTentMedia"/>
+    <meta property="og:description"
+          content="Maybe the page you're looking for is not found or never existed."/>
+    <meta property="og:url" content="https://www.healtentmedia.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="{% static 'images/logo/htm-og-img.jpg' %}"/>
+    <meta property="og:image:url" content="{% static 'images/logo/htm-og-img.jpg' %}"/>
+    <meta property="og:image:width" content="1200px"/>
+    <meta property="og:image:height" content="630px"/>
+
+    <meta name="twitter:description"
+          content="Maybe the page you're looking for is not found or never existed.">
+    <meta name="twitter:title" content="Oops.. Technical Glitch at HealTentMedia">
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:image" content="{% static 'images/logo/htm-og-img.jpg' %}"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en-US">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="city" content="Coimbatore">
+    <meta name="state" content="Tamil Nadu">
+    <meta name="geo.region" content="IN-TN">
+    <meta name="geo.placename" content="Coimbatore">
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/404.css' %}" type="text/css">
+    {% endcompress %}
+</head>
+<body>
+{% if has_header_add == "true" %}
+    {% include 'components/header-add.html' %}
+{% endif %}
+{% include 'components/header.html' %}
+<section>
+    <div class="pnf-body">
+        <p class="pnf-code">404</p>
+        <p class="pnf-title">Oops... Page Not Found</p>
+        <p class="pnf-desc">{{ content }}</p>
+        <img src="{% static 'images/404-img.svg' %}" height="300px" alt="404 ERROR">
+    </div>
+</section>
+{% include 'components/footer.html' %}
+{% compress js %}
+<script defer src="{% static 'js/main.js' %}"></script>
+{% endcompress %}
+</body>
+</html>

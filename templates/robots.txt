@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /assets/images/index/
+Disallow: /admin
+Disallow: mail-subscription/
+Disallow: contact/service-request/
+Disallow: /subscriber-action
+Disallow: /admin-analytics
+
+Sitemap: https://healtentmedia.com/sitemap.xml

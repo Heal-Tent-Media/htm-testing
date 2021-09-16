@@ -1,0 +1,20 @@
+.pnf-body{
+    background-color: #ffffff;
+    color: #262626;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+p{
+    margin: 0;
+}
+
+.pnf-code{
+    font-size: 200px;
+    margin: 0;
+}
+
+.pnf-title{
+    font-size: 40px;
+}

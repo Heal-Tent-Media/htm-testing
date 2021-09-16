@@ -1,0 +1,146 @@
+.f {
+
+}
+
+.fd {
+    position: relative;
+}
+
+hr.f-hr {
+    border: 0.0625rem solid #e6e6e6;
+}
+
+.fbt {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.fb-ig {
+    display: block;
+    margin: auto;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.fh {
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.fh-ig {
+    width: 100%;
+    height: auto;
+}
+
+.fh-tl {
+    margin: 10px 0;
+    color: var(--seconday-color) !important;
+    font-family: "Roboto Mono", monospace;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.fh-p {
+    margin: 10px 0;
+    color: #454545;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.fh-sic {
+    display: flex;
+    margin: 0;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.fh-sic a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.fcs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fc {
+    display: block;
+    margin: 15px;
+    width: 160px;
+    height: auto;
+}
+
+.fc-ti {
+    display: flex;
+    margin: 10px 0 5px;
+    color: var(--font-color-black);
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.fc-tl {
+    display: block;
+    margin: 5px 0;
+    color: var(--seconday-color) !important;
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 350;
+    letter-spacing: 1px;
+    align-items: end;
+    text-decoration: none;
+}
+
+.fbt {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+
+.fbt-hr {
+    margin: auto;
+    width: 95%;
+    height: 1px;
+    background: #a6a6a6;
+}
+
+.fbt-co {
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+}
+
+.fbt-co-h {
+    color: #3cba54 !important;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .fh-tl {
+        font-size: 2.0rem;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+    .fh-tl {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .fh-tl {
+        font-size: 1rem;
+    }
+}

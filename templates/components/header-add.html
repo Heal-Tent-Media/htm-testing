@@ -1,0 +1,22 @@
+{% load static %}
+<script type="text/javascript">
+    let ha_D_style = document.createElement('link');
+    ha_D_style.rel = 'stylesheet';
+    ha_D_style.type = 'text/css';
+    ha_D_style.href = "{% static 'css/component-styles/header-add.css' %}";
+    document.getElementsByTagName('head')[0].appendChild(ha_D_style);
+</script>
+<noscript>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/component-styles/header-add.css' %}">
+</noscript>
+
+<section class="ha-S" id="ha-S">
+    <p class="haS-tx">{{ header_add_text | safe }}</p>
+    <div class="haS-bt" id="haS-bt">
+        <svg width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.96582" y="2.84445" width="40" height="28.5562" rx="8" fill="#DB4437"></rect>
+            <path d="M21.0757 13.5986L17.9629 7.22656H13.959L18.9517 16.04L13.8247 25H17.8775L21.1245 18.5303L24.3838 25H28.3877L23.2608 16.04L28.2657 7.22656H24.2373L21.0757 13.5986Z"
+                  fill="white"></path>
+        </svg>
+    </div>
+</section>

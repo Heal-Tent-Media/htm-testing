@@ -1,0 +1,116 @@
+.h-S {
+    border-bottom: 0.0625rem solid #e6e6e6;
+    z-index: 20;
+}
+
+.h-D {
+    display: flex;
+    height: 90px;
+}
+
+.hD-lgD {
+    display: inline-block;
+    margin: auto 0 auto 50px;
+    height: 70px;
+    width: 57px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .hD-nvD {
+        display: flex !important;
+        width: calc(100% - 57px);
+    }
+}
+
+.hD-nvD {
+    align-items: center;
+    justify-content: center;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.hDnvD-it {
+    display: flex;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    margin: auto 25px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hDnvD-it:hover {
+    color: var(--font-color-black);
+}
+
+
+.hDnvD-cu {
+    width: 110px !important;
+    height: 30px;
+    padding: 2px 5px;
+    font-size: 1.125rem;
+    color: var(--font-color-white) !important;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.hDnvD-cu:hover {
+    background-color: var(--seconday-color);
+}
+
+.hD-nvxD {
+    display: none;
+    width: 40px;
+    height: 90px;
+    margin: auto 25px;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.hDnvxD-ic {
+    border: 0.0925rem solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .hD-nvD {
+        display: none;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 90px;
+        background-color: var(--seconday-color);
+        z-index: 10;
+    }
+
+    .hDnvD-it {
+        display: flex;
+        width: 110px;
+        color: var(--font-color-white) !important;
+    }
+
+    .hD-nvxD {
+        display: flex;
+    }
+
+}

@@ -1,0 +1,128 @@
+{% load static %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscriber Email Verification | Heal Tent Media</title>
+    <meta name="description"
+          content="Verification of subscriber mail">
+
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" href="{% static 'images/logo/favicon.png' %}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en-US">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/subscriber_action/verify_mail_style.css' %}" type="text/css">
+    {% endcompress %}
+</head>
+<body>
+<div class="container-wrapper">
+    <div class="container">
+        <table>
+            <tbody>
+            <tr class="mail-banner">
+                <td>
+                    <img src="https://htm-web-static-bucket.s3.amazonaws.com/mail-assets/htm-text-logo.png"
+                         alt="Heal Tent Media">
+                </td>
+            </tr>
+            <tr class="content">
+                <td>
+                    {% if action_image == "verified" %}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                            <circle class="path circle" fill="none" stroke="white" stroke-width="6"
+                                    stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"></circle>
+                            <polyline class="path check" fill="none" stroke="white" stroke-width="6"
+                                      stroke-linecap="round" stroke-miterlimit="10"
+                                      points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                        </svg>
+                    {% elif action_image == "already-verified" %}
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 500 500" xml:space="preserve">
+                        <style type="text/css">
+	.st0 {
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-width: 25;
+        stroke-miterlimit: 10;
+    }
+</style>
+                            <path class="st0"
+                                  d="M50.3,112.7c0,0,35.6-58.4,97.2-59c0,0,52-10.6,102.5,45.7c0,0,52.6-64.3,125.9-42.5c0,0,96.7,17,92.9,141.8c0,0-5.8,44.1-27.6,65.9L259.6,458.5c0,0-10.7,9.6-18.1,0L80.6,289.6c0,0-49.5-41.4-49.5-104.1C31.1,185.5,30.9,136.3,50.3,112.7z"></path>
+                        </svg>
+                    {% elif action_image == "invalid" %}
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px" y="0px"
+                             viewBox="0 0 500 500" xml:space="preserve">
+                        {% compress css %}
+                        <style type="text/css">
+                            .st0 {
+                                display: none;
+                                fill: #5ABA47;
+                            }
+
+                            .st1 {
+                                fill: none;
+                                stroke: #FFFFFF;
+                                stroke-width: 25;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st2 {
+                                fill: #FFFFFF;
+                            }
+
+                            .st3 {
+                                font-family: 'Audiowide-Regular', sans-serif;
+                            }
+
+                            .st4 {
+                                font-size: 300px;
+                            }</style>
+                            {% endcompress %}
+                            <path class="st0" d="M484.8,496.8H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h472.8c6.6,0,12,5.4,12,12v472.8
+                            C496.8,491.4,491.4,496.8,484.8,496.8z"></path>
+                            <circle class="st1" cx="253.8" cy="251.1" r="214.5"></circle>
+                            <text transform="matrix(1 0 0 1 153.2593 337.2976)" class="st2 st3 st4">x</text>
+                        </svg>
+                    {% endif %}
+                    <p class="success">{{ action_state }}</p>
+                </td>
+            </tr>
+            <tr class="content">
+                <td>
+                    <h3>{{ action_response }}</h3>
+                </td>
+            </tr>
+            {% if subscribe_required %}
+                <tr class="content">
+                    <td>
+                        <h5><a href="https://healtentmedia.com/">SUBSCRIBE NOW</a></h5>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr class="footer">
+                <td>
+                    <br>
+                    <div class="copyrights">
+                        © 2021 <a href="https://healtentmedia.com">Heal Tent Media</a> · All Rights Reserved
+                    </div>
+                    <br>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

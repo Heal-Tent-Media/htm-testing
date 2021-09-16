@@ -1,0 +1,82 @@
+h2 {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 650px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(92, 91, 91);
+}
+
+@media only screen and (max-width: 650px) {
+    h3 {
+        font-size: 15px;
+    }
+}
+
+li {
+    margin: 0 0 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    p {
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+}
+
+
+.pp {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.pp-d {
+    background-color: rgba(128, 128, 128, 0.116);
+    border-radius: 50px;
+    width: 80%;
+    padding: 5%;
+}
+
+@media only screen and (max-width: 650px) {
+    .pp-d {
+        border-radius: 25px;
+        width: 95%;
+        padding: 10%;
+    }
+}
+
+.pp-title {
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+@media only screen and (max-width: 650px) {
+    .pp-title {
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
+.pp-date {
+    color: rgb(92, 91, 91);
+    font-weight: 500;
+}
+
+.pp-i {
+    font-style: italic;
+}
+
+.pp-p-b {
+    font-weight: bold;
+}

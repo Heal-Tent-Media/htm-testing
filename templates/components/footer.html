@@ -1,0 +1,83 @@
+{% load static %}
+{% load compress %}
+{% compress js %}
+<script type="text/javascript">
+    let f_style = document.createElement('link');
+    f_style.rel = 'stylesheet';
+    f_style.type = 'text/css';
+    f_style.href = "{% static 'css/component-styles/footer.css' %}";
+    document.getElementsByTagName('head')[0].appendChild(f_style);
+</script>
+{% endcompress %}
+<noscript>
+    {% compress css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/component-styles/footer.css' %}">
+    {% endcompress %}
+</noscript>
+
+<section class="f -S">
+    <div class="fd -D">
+        <div class="fh">
+            <img src="{% static 'images/logo/healtent-text-logo-large.png' %}" alt="Heal Tent Media"
+                 class="fh-ig">
+            <h3 class="fh-tl">Your Business Healer</h3>
+            <hr class="f-hr">
+            <h4 class="fh-p">Social Media Platforms</h4>
+            <div class="fh-sic">
+                <a><img src="https://htm-web-static-bucket.s3.amazonaws.com/htm-sm-ic/gmail-sm.png" alt="Heal Tent Media Gmail"></a>
+                <a href="https://www.linkedin.com/in/simu-chand" target="_blank"><img src="https://htm-web-static-bucket.s3.amazonaws.com/htm-sm-ic/linkedin-sm.png" alt="Heal Tent Media LinkedIn"></a>
+                <a><img src="https://htm-web-static-bucket.s3.amazonaws.com/htm-sm-ic/facebook-sm.png" alt="Heal Tent Media Facebook"></a>
+                <a><img src="https://htm-web-static-bucket.s3.amazonaws.com/htm-sm-ic/yt-sm.png" alt="Heal Tent Media Youtube"></a>
+            </div>
+        </div>
+        <div class="fcs">
+            <div class="fc">
+                <h4 class="fc-ti">Help</h4>
+                <a href="/#services" class="fc-tl">Services</a>
+                <a href="/terms-and-conditions/" class="fc-tl">Terms & Conditions</a>
+                <a href="/privacy-policy/" class="fc-tl">Privacy Policy</a>
+                <a href="/cookies-policy/" class="fc-tl">Cookies Policy</a>
+                <a href="/sitemap.xml" class="fc-tl">Sitemap</a>
+            </div>
+            <div class="fc">
+                <h4 class="fc-ti">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                         fill="#000000">
+                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z"></path>
+                        <circle cx="12" cy="9" r="2.5"></circle>
+                    </svg>&nbsp;
+                    LOCATION
+                </h4>
+                <p class="fc-tl">
+                    Sitra, Coimbatore,<br>
+                    Tamil Nadu, <br>
+                    India - 641014.
+                </p>
+            </div>
+            <div class="fc">
+                <h4 class="fc-ti">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                         viewBox="0 0 24 24" width="24px" fill="#000000">
+                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                        <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path>
+                    </svg>&nbsp;
+                    Email
+                </h4>
+                <p class="fc-tl">
+                    business@healtentmedia.com
+                </p>
+            </div>
+        </div>
+        <div class="fbt">
+            <div class="fbt-hr"></div>
+            <br>
+            <p class="fbt-co">
+                © 2021 <span class="fbt-co-h">Heal Tent Media</span> · All Rights Reserved
+                <br>
+                Developed with ❤️
+            </p>
+        </div>
+    </div>
+</section>
+
